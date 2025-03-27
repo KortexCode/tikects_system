@@ -1,0 +1,51 @@
+<div class="ticket-form-container">
+    <p>Crear Nuevo Ticket</p>
+    <form [formGroup]="ticketFormGroup" class="mt-3">
+        <ng-template matStepLabel>Información personal</ng-template>
+        <div class="row g-3">
+            <div class="col-4 col-md-4">
+                <div class="form-floating ">
+                    <input type="text" class="form-control input-ingreso" id="floatingInput" formControlName="nombres">
+                    <label for="floatingInput">Titulo *</label>
+                    <span class="req-tag">Campo
+                        requerido</span>
+                </div>
+            </div>
+
+            <div class="col-4 col-md-4">
+                <div class="form-floating">
+                    <select class="form-select input-ingreso" id="floatingSelectGrid" formControlName="tipo_persona"
+                        aria-label="Floating label select example">
+                        <option selected disabled>Seleccione una opción</option>
+                        <!-- <option [value]="tipo.tipo_persona" *ngFor="let tipo of tipoPersona">
+                                {{tipo.tipo_persona}}</option> -->
+                    </select>
+                    <label for="floatingSelectGrid">Prioridad *</label>
+                    <span class="req-tag">Campo
+                        requerido</span>
+                </div>
+            </div>
+
+            <div class="col-4 col-md-4">
+                <div class="form-floating ">
+                    <input type="text" class="form-control input-ingreso" id="floatingInput"
+                        formControlName="razon_social">
+                    <label for="floatingInput">Categoría</label>
+                    <span class="req-tag"></span>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="col-4 col-md-4">
+            <div class="input-group input-ingreso">
+            <!--     <span class="input-group-text">Decripcion</span> -->
+                <textarea class="form-control" aria-label="With textarea" placeholder="Descripción"></textarea>
+            </div>
+        </div>
+    </form>
+    <div class="form-actions">
+        <button type="button" class="cancel">Cancelar</button>
+        <button type="submit" class="submit">Crear Ticket</button>
+    </div>
+</div>

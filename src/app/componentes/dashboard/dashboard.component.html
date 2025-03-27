@@ -1,0 +1,56 @@
+<div class="dashboard">
+        <aside class="sidebar">
+            <div class="container-sidebar-title">
+                <p>Admin Panel</p>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="option-title"><mat-icon class="icon" fontIcon="format_list_bulleted" /><p>Gestión de Tickets</p></li>
+                    <li class="panel-option">
+                        <span (click)="verListatikects()">Lista de Tickets</span>
+                    </li>
+               <!--      <li><a href="#">Detalle del Ticket</a></li> -->
+                    <li class="panel-option"><span (click)="verCrearTikects()">Crear Ticket</span></li>
+                    <!-- <li><a href="#">Actualizar Ticket</a></li> -->
+                    <li class="option-title"><mat-icon>person</mat-icon><p>Gestión de Usuarios</p></li>
+                    <li class="panel-option"><span href="#">Lista de Usuarios</span></li>
+                    <!-- <li class="panel-option"><a href="#">Detalle de Usuario</a></li> -->
+                    <li class="panel-option"><span href="#">Roles y Permisos</span></li>
+                    <li class="option-title"><mat-icon>report</mat-icon><p>Reportes</p></li>
+                    <li class="panel-option"><span href="#">Reportes</span></li>
+                    <li class="option-title"><mat-icon>settings</mat-icon><p>Configuración</p></li>
+                    <li class="panel-option"><span href="#">Configuración</span></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <app-navbar></app-navbar>
+            <div *ngIf="stats">
+                <div class="stats">
+                    <div class="card card-container-info">
+                        <p>Tickets Abiertos</p>
+                        <span>15</span>
+                    </div>
+                    <div class="card card-container-info">
+                        <p>Tickets en Progreso</p>
+                        <span>8</span>
+                    </div>
+                    <div class="card card-container-info">
+                        <p>Tickets Cerrados</p>
+                        <span>22</span>
+                    </div>
+                </div>
+                <div class="recent-tickets">
+                    <p>Últimos Tickets</p>
+                    <ul>
+                        <li>Ticket #1024 - Error en el sistema</li>
+                        <li>Ticket #1025 - Solicitud de acceso</li>
+                        <li>Ticket #1026 - Problema con la base de datos</li>
+                    </ul>
+                </div>
+            </div>
+            <app-ver-tikects *ngIf="verTikects"></app-ver-tikects>
+            <app-crear-tikects *ngIf="crearTikects"></app-crear-tikects>
+        </main>
+    </div>
+

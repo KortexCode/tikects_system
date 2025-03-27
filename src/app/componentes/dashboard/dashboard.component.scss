@@ -1,0 +1,155 @@
+@import '../../variables';
+@import '../../base';
+
+.dashboard-container-bg {
+    height: 100vh;
+    background: #ffffff;
+    color: #ffffff;
+    display: flex;
+}
+
+.dashboard {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #121827;
+    background-color: #ffffff;
+}
+
+.sidebar {
+    width: 240px;
+    background: #132c58;
+    background: $primary-dark;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.container-sidebar-title {
+    width: 100%;
+    padding: 12px;
+    background-color: $primary-dark;
+    
+    p {
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+        margin: 0;
+
+    }
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    color: #ffffff;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.sidebar .option-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 4px;
+    background-color: #334963;
+
+    p{
+        margin: 0;
+        margin-left: 8px;
+    }
+}
+
+.sidebar .panel-option {
+    padding-left: 12px;
+}
+.sidebar .panel-option span{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #bbb;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sidebar nav ul li span:hover {
+    color: white;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        padding: 8px;
+        background-color: #808080;;
+        color: white;
+    }
+}
+
+.card-container-info {
+    width: 200px;
+    margin-right: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #334963;
+    p {
+        color: #ffffff;
+        margin-bottom: 5px;
+    }
+    
+    span {
+        font-size: 18px;
+        font-weight: bold;
+        color: #a9a9a9;
+    }
+}
+
+.stats {
+    display: flex;
+    margin-top: 12px;
+    margin-left: 16px;
+    margin-bottom: 1rem;
+}
+
+
+.recent-tickets {
+    width: 450px;
+    height: auto;
+    margin-left: 12px;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px #0e2245;
+    background-color: #132c58;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.recent-tickets p {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.recent-tickets ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-tickets ul li {
+    background: #121827;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: #ffffff;
+}

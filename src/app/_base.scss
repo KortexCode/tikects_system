@@ -1,0 +1,12 @@
+.btn-acciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    gap: 8px;
+    border-radius: 10px;
+    background-color: $primary-color;
+    color: white;
+    cursor: pointer;
+
+}

@@ -1,0 +1,67 @@
+@import '../../variables';
+@import '../../base';
+
+.ticket-form-container {
+    width: 95%;
+    margin: 0 auto;
+    background: $primary-dark-v2;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.ticket-form-container p {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.ticket-form-container  label {
+    color: #929292;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.ticket-form-container  input, .ticket-form-container  textarea, .ticket-form-container  select {
+    width: 100%;
+    padding-top: 45px;
+    padding-bottom: 20px;
+    /* margin-top: 0.3rem; */
+    /* background: #222; */
+    border: 1px solid #333;
+    border-radius: 3px;
+}
+.ticket-form-container  textarea {
+    /* width: 200px; */
+    height: 100px;
+    padding: 12px;
+    padding-top: 8px;
+}
+
+.form-actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 8px;
+}
+
+.cancel {
+    background: #444;
+    color: #bbb;
+}
+
+.submit {
+    background: $secondary-color;
+    color: #fff;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
