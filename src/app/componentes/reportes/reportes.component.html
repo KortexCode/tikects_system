@@ -1,0 +1,30 @@
+<div class="reports">
+    <div class="title-container">
+        <p>Reportes del Sistema</p><mat-icon> insert_drive_file</mat-icon>
+    </div>
+    <div class="reports-container">
+        <div class="filters">
+            <div class="row g-3">
+                <div class="col-6 col-md-6">
+                    <div class="form-floating ">
+                        <input type="date" class="form-control input-ingreso" id="floatingInput" formControlName="nombres">
+                        <label for="floatingInput">Fecha Inicio:</label>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6">
+                    <div class="form-floating ">
+                        <input type="date" class="form-control input-ingreso" id="floatingInput" formControlName="nombres">
+                        <label for="floatingInput">Fecha Fin:</label>
+                    </div>
+                </div>
+            </div>
+         
+            <button class="filter-btn">Generar Reporte</button>
+        </div>
+    
+        <div class="export-options">
+            <button class="export-btn">Exportar PDF</button>
+            <button class="export-btn">Exportar Excel</button>
+        </div>
+    </div>
+</div>

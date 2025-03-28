@@ -1,0 +1,96 @@
+@import '../../variables';
+@import '../../base';
+
+.reports {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 16px;
+    padding-bottom: 16px;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px 3px $primary-dark-v2;
+
+    .title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 18px;
+        padding: 8px;
+        color: white;
+        background-color: $primary-dark;
+
+        p {
+            margin: 0;
+            margin-right: 12px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+
+    .reports-container {
+        margin-left: 12px;
+    }
+
+    .filters {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+
+        /* label {
+            font-weight: bold;
+        }
+ */
+        /* input {
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: none;
+            background: #1e1e1e;
+            color: white;
+        } */
+
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            background: #2a5298;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+
+            &:hover {
+                background: #1e3a72;
+            }
+        }
+
+        .input-ingreso {
+            width: 100%;
+            padding-top: 45px;
+            padding-bottom: 20px;
+            /* margin-top: 0.3rem; */
+            /* background: #222; */
+            border: 1px solid #333;
+            border-radius: 3px;
+        }
+    }
+
+    .export-options {
+        display: flex;
+        gap: 1rem;
+
+        .export-btn {
+            padding: 0.5rem 1.5rem;
+            background: #2a5298;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+
+            &:hover {
+                background: #1e3a72;
+            }
+        }
+    }
+}

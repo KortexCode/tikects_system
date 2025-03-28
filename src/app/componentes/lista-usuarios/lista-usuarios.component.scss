@@ -1,0 +1,86 @@
+@import '../../variables';
+@import '../../base';
+
+.usuario-list-container {
+    height: 100%;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+
+    mat-form-field {
+        width: 300px;
+    }
+}
+.usuario-table-container {
+    width: 98%;
+    margin: 0 auto;
+/*     box-shadow: 0px 0px 1px 1px $decoration-color; */
+}
+.table-responsive {
+    
+    height: 300px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow-x: auto;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    th {
+        background: $primary-dark;
+        color: white;
+    }
+
+    td {
+        padding: 8px 18px 8px 0;
+        text-align: center;
+    }
+
+    .estado {
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    .activo {
+        color: #388e3c;
+        background: #c8e6c9;
+    }
+
+    .inactivo {
+        color: #d32f2f;
+        background: #ffcdd2;
+    }
+}
+
+mat-paginator {
+    margin-top: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #c3c2c289;
+    color: black;
+}
+
+
+.btn-acciones-tabla {
+    width: 35px;
+    padding: 4px;
+    @extend .btn-acciones;
+    margin-bottom: 8px;
+    margin-left: 16px;
+}
+
+.btn-acciones-tabla:hover {
+    background-color: $secondary-color;
+}

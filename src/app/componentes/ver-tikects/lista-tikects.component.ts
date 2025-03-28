@@ -1,6 +1,5 @@
-import { DataSource } from '@angular/cdk/collections';
-import { NgClass } from '@angular/common';
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgClass } from '@angular/common';
 import { MatFormField, MatLabel } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
@@ -9,13 +8,13 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 
 @Component({
-  selector: 'app-ver-tikects',
-  templateUrl: './ver-tikects.component.html',
-  styleUrl: './ver-tikects.component.scss',
+  selector: 'app-lista-tikects',
+  templateUrl: './lista-tikects.component.html',
+  styleUrl: './lista-tikects.component.scss',
   standalone: true,
   imports: [MatIconModule, MatTableModule, MatFormField, MatLabel, MatPaginator, MatInputModule, NgClass]
 })
-export class VerTikectsComponent implements OnInit{
+export class ListaTikectsComponent implements OnInit{
   //Propiedades para tabla
   displayedColumns: string[] = [
     'acciones',

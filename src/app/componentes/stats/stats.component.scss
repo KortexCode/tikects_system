@@ -1,0 +1,75 @@
+@import '../../variables';
+@import '../../base';
+
+/* .stats-container {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 16px;
+    padding-bottom: 16px;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px 3px $primary-dark-v2;
+} */
+
+.stats {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 12px;
+    margin-bottom: 1rem;
+
+    .card-container-info {
+        width: 200px;
+        margin-right: 16px;
+        padding: 8px;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        background-color: #334963;
+        p {
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+        
+        span {
+            font-size: 18px;
+            font-weight: bold;
+            color: #a9a9a9;
+        }
+    }
+}
+
+
+.recent-tickets {
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    margin-left: 12px;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px #0e2245;
+    background-color: #132c58;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.recent-tickets p {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.recent-tickets ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-tickets ul li {
+    background: #121827;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: #ffffff;
+}
